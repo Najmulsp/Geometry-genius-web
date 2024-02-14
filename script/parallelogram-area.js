@@ -24,6 +24,7 @@ console.log('height: ', height);
 // calculate the parallelogramHeightText area.
 const area = base * height;
 
+// display the area in the areaSpan.
 const parallelogramArea = document.getElementById('parallelogram-area');
 parallelogramArea.innerText =area;
 }

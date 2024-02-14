@@ -24,6 +24,7 @@ console.log('width: ', width);
 // calculate the rectangle area.
 const area = length * width;
 
+// display the area in the areaSpan.
 const rectangleArea = document.getElementById('rectangle-area');
 rectangleArea.innerText =area;
 }
