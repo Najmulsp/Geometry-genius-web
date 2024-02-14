@@ -31,12 +31,13 @@
           <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">Triangle</h2>
-          <p>Area (A) =0.5 x   b x h</p>
+          <h2 class="card-title text-3xl">Triangle</h2>
+          <p class="text-lg">Area (A) =0.5 x   b x h</p>
           <div class="text-left">
-            <input id="triangle-base" class="w-24 rounded-md p-2 text-2xl bg-gray-300"  type="text" placeholder="b"><span class="mr-4 ml-2">cm</span>
-            <input id="triangle-height" class="w-24 rounded-md p-2 text-2xl bg-gray-300 text-left"type="text" placeholder="h"><span class="mr-4 ml-2">cm</span>
+            <input id="triangle-base" class="w-24 rounded-md p-2 text-2xl bg-gray-300"  type="text" placeholder="base"><span class="mr-4 ml-2">cm</span>
+            <input id="triangle-height" class="w-24 rounded-md p-2 text-2xl bg-gray-300 text-left"type="text" placeholder="height"><span class="mr-4 ml-2">cm</span>
           </div>
+          <p class="text-xl">Area: <span id="triangle-area"></span> cm<sup>2</sup></p>
           <div class="card-actions w-full">
             <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
           </div>
@@ -48,14 +49,15 @@
           <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">Rectangle</h2>
-          <p>Area (A) = w   x    I</p>
+          <h2 class="card-title text-3xl">Rectangle</h2>
+          <p class="text-xl">Area (A) = l x w</p>
           <div class="text-left">
-            <input class="w-24 rounded-md p-2 text-2xl bg-gray-300 text-left"  type="text" placeholder="w"><span class="mr-4 ml-2">cm</span>
-            <input class="w-24 rounded-md p-2 text-2xl bg-gray-300" type="text" placeholder="I"><span class="mr-4 ml-2">cm</span>
+            <input id="rectangle-length" class="w-24 rounded-md p-2 text-2xl bg-gray-300 text-left"  type="text" placeholder="length"><span class="mr-4 ml-2">cm</span>
+            <input id="rectangle-width" class="w-24 rounded-md p-2 text-2xl bg-gray-300" type="text" placeholder="width"><span class="mr-4 ml-2">cm</span>
           </div>
+          <p class="text-lg">Area: <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
           <div class="card-actions w-full">
-            <button class="btn btn-primary w-full">Calculate</button>
+            <button onclick="calculateRactangleArea()" class="btn btn-primary w-full">Calculate</button>
           </div>
         </div>
       </div>
@@ -65,11 +67,16 @@
           <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">Parallelogram</h2>
-          <p>Area (A) = b    x   h</p>
-          <p>b=10cm, h=12cm</p>
+          <h2 class="card-title text-3xl">Parallelogram</h2>
+          <p>Area (A) = b x h</p>
+          <!-- <p>b=10cm, h=12cm</p> -->
+          <div class="text-left">
+            <input id="parallelogram-base" class="w-24 rounded-md p-2 text-2xl bg-gray-300 text-left"  type="text" placeholder="base"><span class="mr-4 ml-2">cm</span>
+            <input id="parallelogram-height" class="w-24 rounded-md p-2 text-2xl bg-gray-300" type="text" placeholder="height"><span class="mr-4 ml-2">cm</span>
+          </div>
+          <p class="text-lg">Area: <span id="parallelogram-area"></span> <span>cm<sup>2</sup></span></p>
           <div class="card-actions w-full">
-            <button class="btn btn-primary w-full">Calculate</button>
+            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
           </div>
         </div>
       </div>
@@ -125,5 +132,7 @@
 
 
     <script src="script/triangle-calculate.js"></script>
+    <script src="script/rectangle-area.js"></script>
+    <script src="script/parallelogram-area.js"></script>
 </body>
 </html>
